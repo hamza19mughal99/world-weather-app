@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>links}}
+</head>
+
+<body>
+    <div class="container-fluid main-header">
+        <div class="row">
+            <div class="col-lg-10 col-md-10 col-sm-12 mx-auto">
+
+                <nav class="navbar navbar-expand-lg ">
+               <a class="navbar-brand" href="/">WorldWeatherApp</a> 
+
+                </nav>
+
+            </div>
+        </div>
+    </div>
+
+  {{!-- mmmmmmmmmmmmmmmm --}}
+    <div class="container">
+        <div class="input-group input_div mb-3">
+            <input type="text" class="form-control" autocomplete="off" id="cityName" placeholder="Please Enter City Name" aria-label="Recipient's username"
+                aria-describedby="button-addon2">
+            <input class="btn btn-outline-secondary" type="submit" value="Search" id="submitBtn" id="button-addon2">
+        </div>
+        <div class="date">
+            <p id="day">Tue || 11 || Dec</p>
+            
+        </div>
+        <div class="container1">
+            <div class="main_layer">
+                <p id="city_name">
+                    Get Output Here....
+                </p>
+            </div>
+            <div class="middle_layer">
+                <p id="temp">
+                    <span id="temperature">0</span> <sup>o</sup> C
+                </p>
+                <p id="temp_status">
+                    <i class="fas fa-sun " style="color: yellow;"></i>
+
+                </p>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+
+
+    <script src="main.js">
+
+    </script>
+</body>
+
+</html>
